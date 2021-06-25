@@ -1,2 +1,2 @@
 # upvote-bot
-4Fun discord bot 
+Just a for-fun discord bot
