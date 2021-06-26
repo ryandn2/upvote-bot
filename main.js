@@ -1,6 +1,7 @@
 // UPVOTE BOT
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const keepAlive = require("./server");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -15,6 +16,8 @@ client.on("message", msg => {
     msg.react("👎");
   }
 });
+
+keepAlive();
 
 const mySecret = process.env['TOKEN'];
 client.login(process.env.TOKEN);
