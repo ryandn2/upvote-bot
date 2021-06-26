@@ -1,0 +1,23 @@
+{
+  "name": "upvote-bot-1",
+  "version": "1.0.0",
+  "description": "Just a for-fun discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryandn2/upvote-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryandn2/upvote-bot/issues"
+  },
+  "homepage": "https://github.com/ryandn2/upvote-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}

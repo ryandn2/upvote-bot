@@ -1,12 +1,10 @@
 // UPVOTE BOT
-
-const Discord = require("discord.js")
-require('dotenv').config();
-const client = new Discord.Client()
+const Discord = require("discord.js");
+const client = new Discord.Client();
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
-})
+});
 
 client.on("message", msg => {
   if (msg.content === "ping") {
@@ -16,10 +14,7 @@ client.on("message", msg => {
     msg.react("👍");
     msg.react("👎");
   }
-})
+});
 
-client.on("typingStart", function(channel, user){
-})
-
-
-client.login(process.env.TOKEN)
+const mySecret = process.env['TOKEN'];
+client.login(process.env.TOKEN);
